@@ -1,0 +1,129 @@
+<html>
+	<head>
+		<title> Bài 3 </title> 
+	</head>
+	<body>
+		<marquee>
+			<img src="pug.jpg">
+		</marquee>
+		<h1> Form điền thông tin </h1>
+		<form>
+			<!-- Ví dụ 1 -->
+			<div>
+				<p><b> Họ và Tên </b></p>
+				<!-- dòng type nếu ko ghi gì hoặc ghi sai sẽ tự động hiểu là text -->
+				<input type="text" name="hovaten" placeholder="Điền họ và tên">
+			</div> 
+			
+			<!-- Ví dụ 2 -->
+			<div>
+				<p><b> Mã số sinh viên </b></p>
+				<!-- value để hiện giá trị ô input, readonly để người dùng ko thể chỉnh ô input đó -->
+				<input type="text" name="mssv" placeholder="điền msv" value="2121050008" readonly>
+			</div>
+			
+			<!-- Ví dụ <textarea></textarea> -->
+			<div>
+				<p><b> Giới thiệu bản thân </b></p>
+				<textarea name="gioithieu"> Nhập vào giới thiệu... </textarea>
+			</div>
+			
+			<!-- Ví dụ type="email" -->
+			<div>
+				<p><b> Email: </b></p>
+				<input type="email" name="email" placeholder="Dạng @gmail.com">
+			</div>
+			
+			<!-- Ví dụ type="tel" -->
+			<div>
+				<p><b> Số điện thoại </b></p>
+				<input name="sodienthoai" type="tel"
+				placeholder="Dạng số: 09XXXXXXXX" required
+				pattern="(([0]{1})([3,4,8,9]{1})([0-9]{8}))">
+			</div>
+			
+			<!-- Ví dụ type="radio"(chỉ chọn 1) -->
+			<div>
+				<p><b> Giới tính: </b></p>
+				<input type="radio" name="gioitinh" value="nam"> Nam <br>
+				<input type="radio" name="gioitinh" value="nữ"> Nữ <br>
+			</div>
+			<!-- Ví dụ type="checkbox"(chọn được nhiều) -->
+			<div>
+				<p><b> Sở thích: </b></p>
+				Game: <input type="checkbox" name="sothich" value="game"><br>
+				Gym: <input type="checkbox" name="sothich" value="gym"><br>
+				Music: <input type="checkbox" name="sothich" value="music"><br>
+			</div>
+			
+			<!-- Ví dụ <select name"..."> </select> -->
+			<div>
+				<p><b> Trình duyệt yêu thích: </b></p>
+				<select name="browser">
+					<option value="Interner Explorer"> Internet Explorer </option>
+					<option value="Firefox"> Firefox </option>
+					<option value="Chrome"> Chrome </option>
+					<option value="Opera"> Opera </option>
+					<option value="Safari"> Safari </option>
+					<option value="Cốc  Cốc"> Cốc Cốc </option>
+				</select>
+			</div>
+			
+			<div>
+				0 <input type="range" value="0"> 100
+			<div>
+			<div>
+				<p><b> Tuổi: </b></p>
+				<input type="number" name="tuoi" step="1">
+			<div>
+			
+			<div>
+				<p><b> Ngày Tháng Năm: </b></p>
+				<input type="date" name="ngaythangnamsinh">
+			<div>
+			<div>
+				<p><b> Chọn màu săc: </b></p>
+				<input type="color" name="mausac">
+			<div>
+			
+			<div>
+				<p><b> Nhập Mật Khẩu </b></p>
+				<input type="password" name="matkhau">
+			<div>
+			
+			
+			
+			<br>
+			<div>
+				<input type="submit">
+				<input type="reset">
+			</div>
+		</form>
+		
+		<iframe width="560" 
+		height="315" 
+		src="https://www.youtube.com/embed/ZDjx9AcZq58?si=xgp0E5YA76mNJOGV" 
+		title="YouTube video player" 
+		frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		
+		<div>
+			<audio controls>
+				<source src="" type="audio/mp3">
+			<audio>
+		</div>
+		<div>
+			<video controls width="560" height="315">
+					<source src="" type="video/mp4">
+			</video>
+		</div>
+		
+		<div>
+			Dấu cách: &nbsp; <br>
+			Dấu &lt;<br>
+			Dấu &gt;<br>
+			Dấu &amp;<br>
+			Dấu &quot;<br>
+			Dấu &copy;<br>
+		</div>
+	</body>
+</html>
