@@ -1,0 +1,69 @@
+body { 
+	margin: 0px;
+}
+
+nav {
+	background-color: #0c4ca3;
+	
+	/* to ra 
+	padding: 20px;*/
+}
+ul {
+	/* 2 dòng phải đi cùng nhau */
+	/* lên cùng 1 dòng */	
+	display: flex;
+	/* căn giữa */
+	justify-content: center;
+	
+	
+	/* để cho mất dấu châm */
+	list-style: none;
+	
+	/* xét các phần tử bên trong cách nhau */
+	
+	font-family: Roboto, Arial, Tahoma;
+	
+}
+
+li { 
+	padding: 15px;
+}
+
+.border {
+	/* solid dạng kẻ nét liền */
+	border-right: 1px solid grey;
+}
+
+.danhmuc-lienket {
+	color: white;
+	text-decoration: none;
+}
+
+.banner-qc {
+	display:flex;
+	justify-content: center;
+	margin: 10px 0;
+}
+
+.qc {
+	display:flex;
+	justify-content: space-between;
+}
+
+header {
+	border-bottom: 15px solid grey;
+}
+
+.thongtin {
+	display: flex;
+	padding: 20px;
+	border-bottom: 10px solid #0f75bc;
+}
+
+.tintuc {
+	color: #024da1;
+}
+
+.xemthem {
+	color: #939597;
+}
