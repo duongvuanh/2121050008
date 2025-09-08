@@ -1,0 +1,13 @@
+body {
+   /* background-color: black ; */
+}
+
+header {
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    
+}
