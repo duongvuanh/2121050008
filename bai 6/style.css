@@ -1,13 +1,62 @@
-body {
-   /* background-color: black ; */
-}
-
 header {
     color: gray;
     display: flex;
     justify-content: space-between;
+    background-color: greenyellow;
+    height: 6%;
 }
 
 main {
-    
+    display: flex;
+}
+
+.main_left {
+    width: 25%;
+    height: 100vh;
+    background-color: grey;
+}
+
+.main_center {
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(200, 24, 24);
+    /* overflow: scroll; */
+}
+
+.main_right {
+    width: 25%;
+    height: 100vh;
+    background-color: grey;
+}
+
+
+
+.left_top {
+    display: flex;
+}
+
+.right_top{
+    width: 20%;
+    height: 100vh;
+    background-color: gray;
+}
+
+.de_muc {
+    display: flex;
+}
+.de_muc div {
+    padding: 14px 20px;
+    color: white;
+}
+
+.bai_hat {
+    display: flex;
+    margin: 20px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+img{
+    width:30%;
+    margin-right: 20px;
 }
