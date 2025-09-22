@@ -1,0 +1,88 @@
+<html>  
+    <head>
+        <title> Document </title>
+    </head>
+    <body>
+        <!--External-->
+        <script src="script.js"> </script>
+        <script>
+
+            // để viết chú thích js dùng kí tự //
+            document.writeln("Hello World" + "<br>")
+            
+            // khai báo biến (biến có thể thay đổi) //
+            // var name = value; //
+            // let name = value; //
+            let hoTen = "Duong Vu Anh";
+
+            // dấu "+" dùng để nối chuỗi trong JS //
+            document.writeln(hoTen + "<br>");
+
+            // khai báo hằng số (hằng số là ko thể thay đổi) //
+            const pi = 3.14;
+
+            let soThuNhat = 10;
+            let soThuHai = "10";
+
+            // phép cộng "+"
+
+            // phép trừ "-" 
+           
+            // phép nhân "*"
+
+            // phép chia "/"
+
+            // phép chia lấy dư "%"
+            ketQua = soThuNhat % soThuHai
+            document.writeln(ketQua);
+
+            // "++" cộng thêm 1, "--" trừ đi 1
+
+            soThuNhat += soThuHai;
+            // soThuNhat = soThuNhat + soThuHai;
+            // soThuNhat = soThuNhat - soThuHai;
+            // soThuNhat = soThuNhat * soThuHai;
+            document.writeln(soThuNhat);
+
+            // dùng == không quan tâm đến kiểu dữ liệu, chỉ quan tâm đến giá trị
+            // dùng === quan tâm đến kiểu dữ liệu, giá trị
+            document.writeln(!(soThuNhat !== soThuHai));
+
+            // Object (dùng , thay vì ;)
+            let thongTinSinhVien = {
+                hoTen: "Duong Vu Anh",
+                tuoi: 22,
+                gioiTinh: true,
+                lop: "Mạng máy tinh",
+            }
+
+            let diaChiVuAnh = {
+                thanhPho: "Hà Nội",
+                quanHuyen: "Bắc Từ Liêm",
+                duong: "Kẻ Vẽ",
+            }
+
+            let namNay = 2025;
+
+            thongTinSinhVien.diaChi = diaChiVuAnh
+            document.writeln("Xin chào bạn " 
+            + thongTinSinhVien.hoTen 
+            + " lớp " 
+            + thongTinSinhVien.lop 
+            + " Đường " + thongTinSinhVien.diaChi.duong
+            + ", Huyện: " + thongTinSinhVien.diaChi.quanHuyen
+            + ", Thành phố: " + thongTinSinhVien.diaChi.thanhPho
+            + ", Năm sinh: " + (namNay - thongTinSinhVien.tuoi + "<br>")
+        );
+
+            // chuyển chuỗi thành số
+            let soThuTu = "10.5";
+
+            // parseInt chuyển thành số nguyên
+            soThuTu = parseInt(soThuTu);
+            document.writeln (soThuTu);
+
+            // chuyển số thành chuỗi: ("" + 2500) result = "2500"
+        </script>
+    </body>
+</html>
