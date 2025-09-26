@@ -1,0 +1,93 @@
+<html>
+    <head> 
+        <title>Bai tap JS</title>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <script>
+            let donHang = {
+                maDonHang: "2025",
+                khachHang: {
+                    hoTen: "Dương Vũ Anh",
+                    soDienThoai: "0964896638",
+                    thanThiet: true,
+                    diaChi: "Hà Nội"
+                },
+                danhSachSP: {
+                    sanPham: {
+                        maSP: "123",
+                        tenSP: "Cà Phê",
+                        soLuong: 4,
+                        giaTien: 20,
+                    },
+                    sanPham2: {
+                        maSP: "456",
+                        tenSP: "Matcha",
+                        soLuong: 2,
+                        giaTien: 40,
+                    },
+                    sanPham3: {
+                        maSP: "789",
+                        tenSP: "Trà sữa",
+                        soLuong: 8,
+                        giaTien: 50,
+                    },
+                },
+                thanhToan: false,
+            }
+
+            let danhSachSP = donHang.danhSachSP;
+            tongSP1 = danhSachSP.sanPham.soLuong * danhSachSP.sanPham.giaTien;
+            tongSP2 = danhSachSP.sanPham2.soLuong * danhSachSP.sanPham2.giaTien;
+            tongSP3 = danhSachSP.sanPham3.soLuong * danhSachSP.sanPham3.giaTien;
+            tongAll = tongSP1 + tongSP2 + tongSP3;
+            document.writeln("Tổng giá trị đơn hàng là: " + tongAll + "<br>");
+
+            //các phương thức
+            //STRING.length:
+            let hoTen = "Dương Vũ Anh";
+            document.writeln(hoTen.length + "<br>");
+
+            // trỏ đến phần tử rồi lấy ra:
+            let myString = "Hel lo"
+            document.writeln(myString[2] + "<br>");
+
+            // Cắt chuỗi:
+            let myString2 = "Hello"
+            document.writeln(myString2.slice(1, 4) + "<br>");
+
+            //Thay thế chuỗi
+            document.writeln(myString2.replace("Hello", "Hi") + "<br>");
+
+            //chuyển đổi chữ hoa, chữ thường
+            let tui = "Dvan"
+            document.writeln(tui.toLocaleLowerCase() + "<br>");
+
+            //index of (kí tự cần tìm kiếm)
+            document.writeln(myString.indexOf("l") + "<br>");
+
+            //includes dùng trong trường hợp có hay không
+            document.writeln(myString.includes("e") + "<br>");
+            
+
+            //tách chuỗi thành mảng
+            document.writeln(myString.split('') + "<br>");
+
+            //
+            document.writeln(myString.startsWith('H') + "<br>");
+
+            //toFixed() để định dạng số với số chữ số thập phân nhất định.
+            var pi = 3.14159;
+            pi.toFixed
+
+            //isNaN: is not a number
+            document.writeln(isNaN(10) + "<br>");
+
+            //Hàm Date
+            let toDay = new Date();
+            document.writeln(toDay  + "<br>");
+            //lấy năm
+            document.writeln(toDay.getMonth());
+        </script>
+    </body>
+</html>
