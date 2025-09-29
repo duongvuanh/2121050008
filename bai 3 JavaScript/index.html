@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mảng</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        // Mảng
+        let arr = [1, 2, 3, 4, 'a', 'b', 'c', 2, 3];
+        let ten = 'ten';
+
+        // cách kiểm tra loại biến:
+        document.writeln(typeof(ten));
+        document.writeln('<br>');
+
+        // cách kiểm tra biến này có phải mảng ko:
+        document.writeln(Array.isArray(arr));
+
+        // kiểm tra độ dài của mảng:
+        document.writeln('<br>');
+        document.writeln(arr.length);
+
+        // lấy dữ liệu trong mảng:
+        document.writeln('<br>');
+        document.writeln(arr[1]);
+
+        // kiểm tra trong mảng rồi trả về vị trí
+        document.writeln('<br>');
+        document.writeln(arr.indexOf(3));
+        document.writeln(arr.lastIndexOf(3));
+
+        // thay đổi giá trị trong mảng
+        arr [3] = 6;
+        document.writeln('<br>');
+        document.writeln(arr);
+
+        // cách nối mảng
+        document.writeln('<br>');
+        let a, b, c, d;
+        a = [1, 2, 3];
+        b = "JavaScript"
+        c = [42, "JS"];
+        d = a.concat(b, c);
+        //document.writeln(d);
+
+        // phương thức biến từ 1 mảng thành 1 chuỗi
+        //d = d.join("")
+        //document.writeln(d);
+
+        // xoá phần tử trong mảng
+        //d.pop();
+        //document.writeln(d);
+
+        // thêm vào trong mảng
+        //d.push("Vũ ANh");
+
+        // đảo ngược mảng
+        d.reverse();
+        document.writeln(d);
+
+        // arr.shift(); xoá phần tử đầu tiên
+        // arr.unshift(0); thêm phần tử vào đầu mảng
+
+        // Các lệnh điều kiện trong JS:
+        document.writeln('<br>');
+        let so = 100000000000000001;
+        let soCuoi = parseInt(so[so.length - 1]);
+
+        if (soCuoi % 2 == 0 ){
+            document.writeln("Đây là số chẵn");
+        }
+        else {
+            document.writeln("Đây là số lẻ")
+        }
+
+        let now = new Date().getHours;
+        if (now >= 5, now <= 10){
+            document.writeln("chào buổi sáng");
+        } else if (now > 10 && now <= 13){
+            document.writeln("chào buổi trưa");
+        } else if (now > 13 && now <= 17){
+            document.writeln("chào buổi chiều");
+        } else if (now > 17 && now <= 22){
+            document.writeln("chào buổi tối");
+        } else {
+            document.writeln("chào buổi đêm");
+        }
+
+        // a,b,c
+        //tổng = a*0.6 + b*0.3 + c*0.1
+        //tổng nằm trong khoảng 8 đến 10: A 
+        //7- 8: B 
+        //5-7:C
+        //4-5:D
+        //nhỏ hơn 4 F
+        document.writeln('<br>');
+        let diemA = 4;
+        let diemB = 5;
+        let diemC = 10;
+        tong = diemA*0,6 + diemB*0.3 + diemC*0.1;
+        if (tong >= 8 && tong <= 10) {
+            document.writeln("Điểm tổng kết là: A")
+        } else if (tong >= 7 && tong < 8){
+            document.writeln("Điểm tổng kết là B")
+        } else if (tong >= 5 && tong < 7){
+            document.writeln("Điểm tổng kết là C")
+        } else if (tong >= 4 && tong < 5){
+            document.writeln("Điểm tổng kết là D")
+        } else {
+            document.writeln("Điểm tổng kết là F")
+        }
+    </script>
+</body>
+</html>
