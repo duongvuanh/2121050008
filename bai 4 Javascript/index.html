@@ -1,0 +1,79 @@
+<html>
+    <head>
+
+
+    </head>
+    <body>
+
+        <script>
+            //let d = new Date();
+            //let theDay = d.getDay();
+            //switch (theDay){
+                //case 5:
+                    //document.writeln("Finally Friday");
+                    //break;
+                //case 6:
+                    //document.write("Super Saturday")
+                    //break;
+                //case 0:
+                    //document.write("Super Sunday")
+                    //break;
+            //}
+            
+            //for (i = 1; i <= 501; i++) {
+                //document.writeln(i + "GG <br>");
+            //}
+            
+            let danhSach = ["Dương Trần Nhật	Anh ", "Dương Vũ	Anh ", "Trần Vũ Hải	Anh ", "Bùi Ngọc	Bích ", "Phạm Quốc	Bình ", "Nguyễn Văn	Chung ", "Hoàng Mạnh	Cường ", "Ngô Hoàng	Dương ", "Phạm Văn	Đại ", "Nguyễn Đình	Đạt ", "Phạm	Đức ", "Vũ Trung	Đức ", "Phạm Hương	Giang ", "Phạm Quang	Hậu ", "Trần Văn	Hiệp ", "Nguyễn Văn	Hoàng ", "Phạm Quốc	Hoàng ", "Phạm Thị	Huế ", "Trần Công	Hùng ", "Đào Thế	Huy ", "Đỗ Quang	Huy ", "Phạm Quang	Huy ", "Phạm Thành	Khang ", "Bùi Văn	Khiêm ", "Nguyễn Tiến	Khởi ", "Đỗ Trung	Kiên ", "Vương Hà	Linh ", "Đào Quang	Lộc ", "Ngô Gia	Lộc ", "Bùi Văn	Mạnh ", "Nguyễn Văn	Mạnh ", "Phan Văn	Mạnh ", "Trương Công	Minh ", "Đỗ Thành	Nam ", "Lê Duy	Nam ", "Nguyễn Hoàng	Nam ", "Nguyễn Anh	Quân ", "Cao Thị Thu	Quyên ", "Phạm Gia	Tài ", "Nguyễn Thị Thanh	Tâm © ", "Nguyễn Đình	Thái ", "Lưu Tiến	Thành ", "Trần Văn	Thành ", "Nguyễn Thị	Thúy ", "Nguyễn Thị	Thúy ", "Bùi Duy	Tiến ", "Nguyễn Văn	Tiến ", "Đỗ Văn	Trung ", "Phạm Đan	Trường ", "Lê Thị Cẩm	Tú ", "Phan Văn	Tuân ", "Cao Thái	Tuấn ", "Nguyễn Duy	Tuấn ", "Nguyễn Huy	Tuấn ", "Thiều Văn	Việt ", "Nguyễn Kiều	Vy"];
+            let dem = 0;
+            for (let i = 0; i < danhSach.length; i++){
+                if (danhSach[i].toLocaleLowerCase().startsWith('nguyễn') == true){
+                    dem = dem + 1;
+                }
+            }
+            document.writeln(dem);
+
+            //vừa có điều kiện vừa có for ở bên trong
+            //let i = 0;
+            //while (i <= 10)
+            //{
+            //    document.writeln("The number is" + i)
+            //    document.writeln("<br>");
+            //    i=i+1
+            //}
+
+            //alert("hi");
+
+            // trả về giá trị true hoặc false
+            //let result = confirm("Press a Button");
+
+            //if (result == true){
+            //    document.writeln("bấm ok");
+            //}   else {
+            //    document.writeln("bấm cancle");
+            //}
+            
+            document.writeln("<br>");
+            //let result2 = prompt("Nhập họ và tên", "Ví dụ:...");
+            //document.writeln(result2);
+
+            //function + tên hàm(){
+            //  code logic...
+            //}
+
+
+            //function sayHello() {
+            //    document.writeln("XinChao");
+            //}
+            //sayHello();
+
+            // Hàm có tham số
+            let ten = prompt("Nhập họ và tên", "Ví dụ:...");
+            let namSinh = prompt("Nhập năm sinh", "Ví dụ:...");
+            function sayHello2(ten, namSinh) {
+                document.writeln("Xin Chào " + ten + " sinh năm " + namSinh);
+            }
+            sayHello2(ten, namSinh);
+        </script>
+    </body>
+</html>
