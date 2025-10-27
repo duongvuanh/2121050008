@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1> Tính tổng </h1>
+        <div>
+            nhập số thứ nhất
+            <input  type="number" id="soThuNhat">
+        </div>
+        <div>
+            nhập số thứ hai
+            <input  type="number" id="soThuHai">
+        </div>
+        <div>
+            <button onclick="tinhTong()"> Tính Tổng </button>
+        </div>
+        <div>
+            Kết quả: <input  type="number" id="ketQua" >
+        </div>
+        
+
+        <script>
+            function tinhTong() {
+                let soThuNhat = parseFloat(document.getElementById('soThuNhat').value);
+                let soThuHai = parseFloat(document.getElementById('soThuHai').value);
+                let canhBao = "";
+                
+
+                let tong = soThuNhat + soThuHai
+                
+            }
+        </script>
+
+    </body>
+</html>

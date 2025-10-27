@@ -1,0 +1,53 @@
+<html>
+    <head>
+
+
+    </head>
+    <body>
+        <div>
+            Nhập điểm A: 
+            <input  type="number" id="A">
+        </div>
+        <div>
+            Nhập điểm B: 
+            <input  type="number" id="B">
+        </div>
+        <div>
+            Nhập điểm C: 
+            <input  type="number" id="C">
+        </div>
+        <button onclick="tinhDiem()"> Tính điểm </button>
+        <div>
+            Kết quả: <input  type="number" id="ketQua">
+        </div>
+        <script>
+            function tinhDiem() {
+                let diemA = parseFloat(document.getElementById("A").value);
+				let diemB = parseFloat(document.getElementById("B").value);
+				let diemC = parseFloat(document.getElementById("C").value);
+                tinhDiemChu(diemA, diemB, diemC);
+            }
+
+            function tinhDiemChu(diemA, diemB, diemC) {
+				let diem = diemA * 0.6 + diemB * 0.3 + diemC * 0.1
+				if (8<=diem && diem<=10){
+					document.writeln('A')
+				}
+				else if(7<=diem && diem<8){
+						document.writeln('B')
+				}
+				else if(6<=diem && diem<7){
+						document.writeln('C')
+				}
+				else if(5<=diem && diem<6){
+						document.writeln('D')
+				}
+				else {
+						document.writeln('F')
+				}
+                document.getElementById("ketQua").value = diem;
+			}
+
+        </script>
+    </body>
+</html>
