@@ -8,7 +8,7 @@ nav {
 	/* to ra 
 	padding: 20px;*/
 }
-ul {
+header ul {
 	/* 2 dòng phải đi cùng nhau */
 	/* lên cùng 1 dòng */	
 	display: flex;
@@ -51,19 +51,51 @@ li {
 }
 
 header {
-	border-bottom: 15px solid grey;
+	border-bottom: 15px solid white;
+}
+
+.tonghop {
+	margin: 10px 0; 
 }
 
 .thongtin {
 	display: flex;
-	padding: 20px;
-	border-bottom: 10px solid #0f75bc;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px ;
+	border-bottom: 3px solid grey;
 }
 
 .tintuc {
 	color: #024da1;
+	text-decoration: none;
+	border-bottom: 2px solid #024da1;
 }
 
 .xemthem {
 	color: #939597;
+	text-decoration: none;
+}
+
+.bangtin {
+	display: flex;
+	justify-content: center;
+	
+}
+
+.bangthongtin img {
+	width: 100%;
+}
+
+.bangthongtin h2 {
+	font-size: 16px;
+	margin: 10px 0;
+	color: #000;
+}
+
+.tin {
+	padding: 15px;
+	text-decoration: none;
+	color: black;
+
 }

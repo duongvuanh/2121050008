@@ -7,24 +7,39 @@
     <style>
         .container {
             display: flex;
+            background-color: bisque;
+            height: 58vh;
+            width: 35%;
+            margin: 50px auto;
+        }
+
+        .left {
+            display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 15px;
         }
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <div>
-            Chiều cao: <input type="number" name="" id="chieuCao">
+    <div class="container"> <div></div>
+        <div class="left">
+            <div>
+                Chiều cao: <input type="number" name="" id="chieuCao" placeholder="mét">
+            </div>
+            <div>
+                Cân nặng: <input type="number" name="" id="canNang" placeholder="Kg">
+            </div>
+            <div>
+                <button onclick="tinh()">Tính chỉ số BMI</button>
+            </div>
+            <div>
+                Kết Quả: <input  type="number" id="ketQua" readonly>
+            </div>
         </div>
-        <div>
-            Cân nặng: <input type="number" name="" id="canNang">
-        </div>
-        <div>
-            <button onclick="tinh()">Tính chỉ số BMI</button>
-        </div>
-        <div>
-            Kết Quả: <input  type="number" id="ketQua" >
+        <div class="right">
+                <img src="" alt="" width="300" height="400">
         </div>
     </div>
     <script>
@@ -34,6 +49,21 @@
             let chiSo = canNang / (chieuCao*chieuCao);
             if (!chieuCao || !canNang) {
                 document.writeln("Vui lòng nhập đầy đủ thông tin");
+            }
+            if (chiSo < 18.5) {
+                document.getElementsByTagName('img')[0].src = 'kg1.jpg';
+            }
+             else if (chiSo >= 18.5 && chiSo <= 24.9) {
+                document.getElementsByTagName('img')[0].src = 'kg5.jpg';
+            }
+             else if (chiSo >= 25 && chiSo <= 29.9) {
+                document.getElementsByTagName('img')[0].src = 'kg2.jpg';
+            }
+             else if (chiSo >= 30 && chiSo <= 39.9) {
+                document.getElementsByTagName('img')[0].src = 'kg3.jpg';
+            }
+             else {
+                document.getElementsByTagName('img')[0].src = 'kg4.jpg';
             }
             document.getElementById('ketQua').value = chiSo;
         }

@@ -1,41 +1,150 @@
 <html>
-    <head>
-        <title> Đăng ký </title>
-        <style>
-            body {
-                margin: 0;
-            }
-            .container{
-                width: 70%;
-                height: 100vh;
-                background-color: black;
-                display: flex;
-                justify-content: space-between;
-                margin: 50px auto;
-            }
+	<head>
+	  <title>Login Page</title>
+	  <style>
 
-            .trai {
-                width: 50%;
-                background-color: blue;
-                display: flex;
-                justify-content: center;
-            }
+		body {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  height: 100vh;
+		  background: #f3f3f3;
+		}
 
-            .phai {
-                width: 50%;
-                background-color: brown;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="trai">
-                <img src="Screenshot 2025-09-15 180403.png" alt="" style="width: 60%; height: 50vh;">
-                <a href="#"> Create an account </a>
-            </div>
-            <div class="phai">
+		.container {
+		  display: flex;
+		  background: white;
+		  padding: 30px;
+		  border-radius: 10px;
+		  border: 1px solid grey;
+		  width: 70%;
+		}
 
-            </div>
-        </div>
-    </body>
+		.left {
+		  width: 50%;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		}
+
+		.right {
+		  width: 50%;
+		  display: flex;
+		  flex-direction: column;
+		}
+
+		h2 {
+		  margin-bottom: 20px;
+		}
+
+		.input-group {
+		  margin-bottom: 15px;
+		}
+
+		.input-group input {
+		  width: 100%;
+		  padding: 10px;
+		  border: 1px solid #ccc;
+		  border-radius: 5px;
+		}
+
+		.remember {
+		  display: flex;
+		  align-items: center;
+		  gap: 5px;
+		  margin-bottom: 15px;
+		  font-size: 14px;
+		}
+
+		.btn {
+		  background: #4a90e2;
+		  color: white;
+		  border: none;
+		  padding: 10px;
+		  width: 100%;
+		  border-radius: 5px;
+		  cursor: pointer;
+		  font-size: 16px;
+		  margin-bottom: 15px;
+		}
+
+		.social-login {
+		  display: flex;
+		  gap: 10px;
+		  justify-content: center;
+		}
+
+		.social-login a {
+		  display: inline-block;
+		  width: 30px;
+		  height: 30px;
+		  border-radius: 50%;
+		  background: #ddd;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  text-decoration: none;
+		  font-weight: bold;
+		  color: white;
+		}
+
+		.social-login .fb {
+			background-color: #3b5998;
+		}
+		.social-login .tw {
+			background-color: #1da1f2; 
+		}
+		.social-login .gg {
+			background-color: #db4437; 
+		}
+
+		.create {
+		  text-align: center;
+		  margin-top: 10px;
+		  font-size: 14px;
+		}
+
+		.create a {
+		  text-decoration: none;
+		  color: black;
+		  font-weight: bold;
+		}
+	  </style>
+	</head>
+	<body>
+	  <div class="container">
+		<!-- Bên trái -->
+		<div class="left">
+		  <img src="" alt="Ảnh">
+		</div>
+
+		<!-- Bên phải -->
+		<div class="right">
+		  <h2>Log In</h2>
+		  <div class="input-group">
+			<input type="text" placeholder="Your Email">
+		  </div>
+		  <div class="input-group">
+			<input type="password" placeholder="Password">
+		  </div>
+
+		  <div class="remember">
+			<input type="checkbox" id="remember">
+			<label for="remember">Remember me</label>
+		  </div>
+
+		  <button class="btn">Log In</button>
+
+		  <div class="social-login">
+			<a href="#" class="fb">f</a>
+			<a href="#" class="tw">t</a>
+			<a href="#" class="gg">G</a>
+		  </div>
+
+		  <div class="create">
+			<a href="#">Create an account</a>
+		  </div>
+		</div>
+	  </div>
+	</body>
 </html>

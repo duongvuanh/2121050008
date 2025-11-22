@@ -78,8 +78,8 @@
             document.writeln("Đây là số lẻ")
         }
 
-        let now = new Date().getHours;
-        if (now >= 5, now <= 10){
+        let now = new Date().getHours();
+        if (now >= 5 && now <= 10){
             document.writeln("chào buổi sáng");
         } else if (now > 10 && now <= 13){
             document.writeln("chào buổi trưa");
@@ -99,20 +99,29 @@
         //4-5:D
         //nhỏ hơn 4 F
         document.writeln('<br>');
-        let diemA = 4;
+        let diemA = 5;
         let diemB = 5;
         let diemC = 10;
-        tong = diemA*0,6 + diemB*0.3 + diemC*0.1;
+        tong = diemA*0.6 + diemB*0.3 + diemC*0.1;
+        if (diemA<0 || diemA>10){
+            document.writeln('Điểm A nhập vào không hợp lệ xin mời nhập lại')
+        }
+        else if (diemB<0 || diemB>10){
+            document.writeln('Điểm B nhập vào không hợp lệ xin mời nhập lại')
+        }
+        else if (diemC<0 || diemC>10){
+            document.writeln('Điểm C nhập vào không hợp lệ xin mời nhập lại')
+        }
         if (tong >= 8 && tong <= 10) {
-            document.writeln("Điểm tổng kết là: A")
+            document.writeln("Điểm tổng kết là: A"); 
         } else if (tong >= 7 && tong < 8){
-            document.writeln("Điểm tổng kết là B")
+            document.writeln("Điểm tổng kết là B");
         } else if (tong >= 5 && tong < 7){
-            document.writeln("Điểm tổng kết là C")
+            document.writeln("Điểm tổng kết là C");
         } else if (tong >= 4 && tong < 5){
-            document.writeln("Điểm tổng kết là D")
+            document.writeln("Điểm tổng kết là D");
         } else {
-            document.writeln("Điểm tổng kết là F")
+            document.writeln("Điểm tổng kết là F");
         }
     </script>
 </body>

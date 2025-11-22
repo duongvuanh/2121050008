@@ -13,10 +13,7 @@
             <input  type="number" id="soThuHai">
         </div>
         <div>
-            <button onclick="tinhToan('cong')"> + </button>
-            <button onclick="tinhToan('tru')"> - </button>
-            <button onclick="tinhToan('nhan')"> X </button>
-            <button onclick="tinhToan('chia')"> / </button>
+            <button onclick="tinhTong()"> Tính Tổng </button>
         </div>
         <div>
             Kết quả: <input  type="number" id="ketQua" >
@@ -24,24 +21,14 @@
         
 
         <script>
-            function tinhToan(dau) {
+            function tinhTong() {
                 let soThuNhat = parseFloat(document.getElementById('soThuNhat').value);
                 let soThuHai = parseFloat(document.getElementById('soThuHai').value);
-                let ketQua;
+                let canhBao = "";
+                if so
+
+                let tong = soThuNhat + soThuHai
                 
-                if (dau == "cong") {
-					ketQua = soThuNhat + soThuHai;
-				}
-				else if (dau == "tru") {
-					ketQua = soThuNhat - soThuHai;
-				}
-				else if (dau == "nhan") {
-					ketQua = soThuNhat * soThuHai;
-				}
-				else if (dau == "chia") {
-					ketQua = soThuNhat / soThuHai;
-				}
-				document.getElementById('ketQua').value = ketQua;
             }
         </script>
 
